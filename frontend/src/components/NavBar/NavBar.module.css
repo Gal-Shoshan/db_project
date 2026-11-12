@@ -1,0 +1,8 @@
+.brandLink:hover {
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  gap: var(--space-1);
+}

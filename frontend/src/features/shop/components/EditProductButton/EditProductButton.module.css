@@ -1,0 +1,19 @@
+.editProduct {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.stock,
+.noStock {
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.stock {
+  color: var(--color-text-muted);
+}
+
+.noStock {
+  color: var(--color-danger);
+}

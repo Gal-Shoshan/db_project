@@ -1,0 +1,84 @@
+.image {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  color: #5b6475;
+  background: #eef0f4;
+}
+
+.drawing {
+  width: 46%;
+  height: 46%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.electronics {
+  color: #2457c5;
+  background: #e7efff;
+}
+
+.home-kitchen {
+  color: #b4540a;
+  background: #fff1e3;
+}
+
+.books {
+  color: #6b3fb5;
+  background: #f1eafe;
+}
+
+.sports-outdoors {
+  color: #1d7a46;
+  background: #e5f6ec;
+}
+
+.toys-games {
+  color: #c0306a;
+  background: #fde8f1;
+}
+
+.beauty {
+  color: #0e7a86;
+  background: #e2f6f8;
+}
+
+@media (prefers-color-scheme: dark) {
+  .image {
+    color: #9aa4b5;
+    background: #1f2734;
+  }
+
+  .electronics {
+    color: #8fb2ff;
+    background: #1a2640;
+  }
+
+  .home-kitchen {
+    color: #f5b37a;
+    background: #33251a;
+  }
+
+  .books {
+    color: #c3a6f5;
+    background: #2a2140;
+  }
+
+  .sports-outdoors {
+    color: #7fd6a3;
+    background: #17301f;
+  }
+
+  .toys-games {
+    color: #f38fba;
+    background: #3a1c2a;
+  }
+
+  .beauty {
+    color: #7fd4de;
+    background: #14313a;
+  }
+}

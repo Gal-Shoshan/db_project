@@ -1,0 +1,67 @@
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--space-3) var(--space-4);
+  margin: 0 0 var(--space-5);
+}
+
+.fact dt {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.fact dd {
+  margin: 0;
+  font-weight: 500;
+}
+
+.available,
+.unavailable {
+  display: inline-block;
+  padding: 2px var(--space-2);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1px solid currentColor;
+  border-radius: var(--radius-sm);
+}
+
+.available {
+  color: var(--color-delta-up);
+}
+
+.unavailable {
+  color: var(--color-danger);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.removeButton {
+  display: inline-grid;
+  place-items: center;
+  width: var(--control-height);
+  height: var(--control-height);
+  color: var(--color-danger);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.removeButton:hover {
+  border-color: var(--color-danger);
+}
+
+.trashIcon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

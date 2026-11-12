@@ -1,0 +1,17 @@
+.addToCart {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+.inCart {
+  min-height: 1.25rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-delta-up);
+}

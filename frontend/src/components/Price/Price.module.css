@@ -1,0 +1,22 @@
+.price {
+  display: inline-block;
+}
+
+.display {
+  display: inline-flex;
+  align-items: flex-start;
+  color: var(--color-text);
+}
+
+.symbol,
+.fraction {
+  margin-top: 0.2rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.whole {
+  font-size: 1.625rem;
+  font-weight: 500;
+  line-height: 1;
+}

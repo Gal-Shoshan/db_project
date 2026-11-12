@@ -1,0 +1,71 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  transition: box-shadow 150ms ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-raised);
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+  padding: var(--space-3) var(--space-4) var(--space-4);
+}
+
+.title {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.35;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.875rem;
+}
+
+.reviewCount {
+  color: var(--color-primary);
+}
+
+.priceRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.listPrice {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.delivery {
+  font-size: 0.8125rem;
+}
+
+.unavailable {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-danger);
+}
+
+.action {
+  margin-top: auto;
+  padding-top: var(--space-2);
+}

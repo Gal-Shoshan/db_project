@@ -1,0 +1,9 @@
+.buyMode {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+}
+
+.buyMode .contentAboveCart {
+  padding-bottom: 104px;
+}

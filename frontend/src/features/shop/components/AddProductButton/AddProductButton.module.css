@@ -1,0 +1,37 @@
+.addButton {
+  position: fixed;
+  right: var(--space-5);
+  bottom: var(--space-5);
+  z-index: 20;
+  display: inline-grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  color: var(--color-primary-text);
+  background: var(--color-primary);
+  border: 0;
+  border-radius: 50%;
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  transition: background-color 120ms ease;
+}
+
+.addButton:hover {
+  background: var(--color-primary-hover);
+}
+
+.plusIcon {
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+}
+
+@media (max-width: 560px) {
+  .addButton {
+    right: var(--space-4);
+    bottom: var(--space-4);
+  }
+}

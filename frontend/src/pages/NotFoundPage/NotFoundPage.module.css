@@ -1,0 +1,15 @@
+.notFound {
+  max-width: 520px;
+  margin: var(--space-7) auto 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.text {
+  margin: var(--space-3) 0 var(--space-5);
+  color: var(--color-text-muted);
+}

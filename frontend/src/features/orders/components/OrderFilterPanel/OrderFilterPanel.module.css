@@ -1,0 +1,24 @@
+.dateField {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: 0.9375rem;
+}
+
+.dateLabel {
+  color: var(--color-text-muted);
+}
+
+.dateInput {
+  min-height: 40px;
+  padding: 0 var(--space-3);
+  font: inherit;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.dateInput:hover {
+  border-color: var(--color-text-muted);
+}

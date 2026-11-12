@@ -1,0 +1,123 @@
+.plotArea {
+  position: relative;
+  width: 100%;
+}
+
+.svg {
+  display: block;
+  overflow: visible;
+}
+
+.gridline {
+  stroke: var(--color-chart-grid);
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+.baseline {
+  stroke: var(--color-chart-axis);
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+.hoverBand {
+  fill: var(--color-chart-hover);
+}
+
+.tickLabel,
+.monthLabel,
+.yearLabel {
+  fill: var(--color-text-muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.yearLabel {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.peakLabel {
+  fill: var(--color-text);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.hitLayer {
+  position: absolute;
+  display: flex;
+}
+
+.hitTarget {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: var(--radius-sm);
+  cursor: default;
+}
+
+.hitTarget:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: -2px;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 2;
+  padding: var(--space-3) var(--space-4);
+  font-size: 0.875rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-raised);
+  pointer-events: none;
+}
+
+.tooltipTitle {
+  margin-bottom: var(--space-2);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.tooltipRows {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tooltipRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.lineKey {
+  width: 14px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.tooltipValue {
+  font-weight: 700;
+  color: var(--color-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.tooltipName {
+  color: var(--color-text-muted);
+}
+
+.tooltipNet {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-border);
+}

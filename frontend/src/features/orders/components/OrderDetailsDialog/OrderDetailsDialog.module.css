@@ -1,0 +1,93 @@
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-4);
+  margin: 0 0 var(--space-5);
+}
+
+.fact dt {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.fact dd {
+  margin: 0;
+  font-weight: 500;
+}
+
+.status,
+.approvedStatus {
+  display: inline-block;
+  padding: 2px var(--space-2);
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+}
+
+.status {
+  color: var(--color-info-text);
+  background: var(--color-info-bg);
+}
+
+.approvedStatus {
+  color: var(--color-delta-up);
+  border: 1px solid currentColor;
+}
+
+.items {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.itemsCaption {
+  margin-bottom: var(--space-2);
+  font-weight: 700;
+  text-align: left;
+}
+
+.items th,
+.items td {
+  padding: 10px 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--color-chart-grid);
+}
+
+.items th + th,
+.items th + td,
+.items td + td {
+  padding-left: var(--space-4);
+}
+
+.items thead th {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  border-bottom-color: var(--color-border);
+}
+
+.product {
+  font-weight: 500;
+}
+
+.unitPrice {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+.items .number {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.items tfoot th,
+.items tfoot td {
+  font-weight: 700;
+  border-top: 2px solid var(--color-border);
+  border-bottom: 0;
+}

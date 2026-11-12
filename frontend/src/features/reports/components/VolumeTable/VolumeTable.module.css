@@ -1,0 +1,83 @@
+.scroller {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.table th,
+.table td {
+  padding: 10px var(--space-3);
+  text-align: left;
+  border-bottom: 1px solid var(--color-chart-grid);
+}
+
+.table thead th {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  border-bottom-color: var(--color-border);
+  white-space: nowrap;
+}
+
+.rowHeading {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.table .number {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.table tbody tr:hover {
+  background: var(--color-chart-hover);
+}
+
+.table tfoot th,
+.table tfoot td {
+  font-weight: 700;
+  border-top: 2px solid var(--color-border);
+  border-bottom: 0;
+}
+
+.swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  border-radius: 2px;
+}
+
+.shortLabel {
+  display: none;
+}
+
+@media (max-width: 560px) {
+  .table {
+    font-size: 0.8125rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 8px 6px;
+  }
+
+  .longLabel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  .shortLabel {
+    display: inline;
+  }
+}

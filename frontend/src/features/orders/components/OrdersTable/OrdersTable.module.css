@@ -1,0 +1,108 @@
+.scroller {
+  overflow-x: auto;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.table th,
+.table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: left;
+  border-bottom: 1px solid var(--color-chart-grid);
+}
+
+.table thead th {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  border-bottom-color: var(--color-border);
+  white-space: nowrap;
+}
+
+.table tbody tr:last-child th,
+.table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.row {
+  cursor: pointer;
+}
+
+.row:hover {
+  background: var(--color-chart-hover);
+}
+
+.dateCell {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.detailsButton {
+  padding: 0;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.row:hover .detailsButton {
+  text-decoration: underline;
+}
+
+.table .number {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.table .actionCell {
+  width: 1%;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.actionButton {
+  min-height: 36px;
+  padding: 0 var(--space-3);
+  font-size: 0.875rem;
+  font-weight: 600;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.danger {
+  color: var(--color-danger);
+}
+
+.danger:hover {
+  border-color: var(--color-danger);
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.primary:hover {
+  border-color: var(--color-primary);
+}
+
+@media (max-width: 560px) {
+  .table {
+    font-size: 0.875rem;
+  }
+
+  .table th,
+  .table td {
+    padding: var(--space-2) var(--space-3);
+  }
+}
